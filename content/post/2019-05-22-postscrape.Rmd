@@ -1,0 +1,30 @@
+---
+title: "Postscrape"
+author: "Caochi"
+date: '2019-05-22'
+slug: postscrape
+tags: []
+categories: []
+---
+##爬网页
+
+```{r}
+library(xml2)
+library(rvest)
+url<-'http://www.gov.cn/zhuanti/2018lh/2018zfgzbg/zfgzbg.htm' 
+web <- read_html(url,encoding="utf-8") 
+position<-web %>% html_nodes("div.event_box div p") %>% html_text()
+print(position)
+library(jiebaRD)
+library(jiebaR)
+engine_s<-worker(stop_word = "C:\\Users\\Liuye\\Desktop\\stopwords.txt")
+seg<-segment(position,engine_s)
+f<-freq(seg)
+f<-f[order(f[2],decreasing=TRUE),]
+library(yaml)
+library(wordcloud2)
+f1<-f[1:150,]
+wordcloud2(f1, size = 0.8 ,shape='star')
+
+```
+
