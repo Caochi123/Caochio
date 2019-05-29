@@ -15,6 +15,7 @@ library(ggplot2)
 df <- data.frame(h, w)
 ggplot(data = df, aes(x = h, y=w)) + geom_point(color = "#ff2d51", size = 6)
 ```
+
 练习2
 
 ```{r}
