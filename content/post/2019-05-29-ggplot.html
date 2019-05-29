@@ -1,0 +1,33 @@
+---
+title: "ggplot"
+author: "Caochi"
+date: '2019-05-29'
+slug: ggplot
+tags: []
+categories: []
+---
+
+
+
+<p>练习1</p>
+<pre class="r"><code>h &lt;- 160:180
+w &lt;- 50:70
+library(ggplot2)</code></pre>
+<pre><code>## Registered S3 methods overwritten by &#39;ggplot2&#39;:
+##   method         from 
+##   [.quosures     rlang
+##   c.quosures     rlang
+##   print.quosures rlang</code></pre>
+<pre class="r"><code>df &lt;- data.frame(h, w)
+ggplot(data = df, aes(x = h, y=w)) + geom_point(color = &quot;#ff2d51&quot;, size = 6)</code></pre>
+<p><img src="/post/2019-05-29-ggplot_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+练习2</p>
+<pre class="r"><code>h &lt;- 160:180
+w &lt;- 50:70
+library(ggplot2)
+df &lt;- data.frame(h, w)
+wdata &lt;- data.frame(sex=factor(rep(c(&quot;F&quot;, &quot;M&quot;), each=200)), weight=c(rnorm(200, 55), rnorm(200, 58)))
+a &lt;- ggplot(wdata, aes(x=weight))
+a + geom_area(stat = &quot;bin&quot;, fill=&quot;#ff2d51&quot;)</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/post/2019-05-29-ggplot_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>

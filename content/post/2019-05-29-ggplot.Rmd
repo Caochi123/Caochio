@@ -1,0 +1,30 @@
+---
+title: "ggplot"
+author: "Caochi"
+date: '2019-05-29'
+slug: ggplot
+tags: []
+categories: []
+---
+练习1
+
+```{r}
+h <- 160:180
+w <- 50:70
+library(ggplot2)
+df <- data.frame(h, w)
+ggplot(data = df, aes(x = h, y=w)) + geom_point(color = "#ff2d51", size = 6)
+```
+练习2
+
+```{r}
+h <- 160:180
+w <- 50:70
+library(ggplot2)
+df <- data.frame(h, w)
+wdata <- data.frame(sex=factor(rep(c("F", "M"), each=200)), weight=c(rnorm(200, 55), rnorm(200, 58)))
+a <- ggplot(wdata, aes(x=weight))
+a + geom_area(stat = "bin", fill="#ff2d51")
+                   
+```
+
