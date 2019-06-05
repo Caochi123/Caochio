@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Caochi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DiagrammeR</title>
+      <link>/2019/06/05/diagrammer/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/05/diagrammer/</guid>
+      <description>练习1
+library(DiagrammeR)## Registered S3 methods overwritten by &amp;#39;ggplot2&amp;#39;:## method from ## [.quosures rlang## c.quosures rlang## print.quosures rlanggrViz(&amp;quot;digraph fig{scu[label=&amp;#39;四川大学&amp;#39;, shape=egg]A [label=&amp;#39;公管&amp;#39;, color=red, shape=egg]B [label=&amp;#39;文新&amp;#39;, color=blue, shape=egg]C [label=&amp;#39;建环&amp;#39;, color=green, shape=egg]D [label=&amp;#39;数院&amp;#39;, color=yellow, shape=egg]scu -&amp;gt; {A,B,C,D}}&amp;quot;){&#34;x&#34;:{&#34;diagram&#34;:&#34;digraph fig{\nscu[label=\&#34;四川大学\&#34;, shape=egg]\nA [label=\&#34;公管\&#34;, color=red, shape=egg]\nB [label=\&#34;文新\&#34;, color=blue, shape=egg]\nC [label=\&#34;建环\&#34;, color=green, shape=egg]\nD [label=\&#34;数院\&#34;, color=yellow, shape=egg]\nscu - {A,B,C,D}\n}&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}练习2
+grViz(&amp;quot;digraph dot {graph [layout = neato]node [shape = egg, style = filled, color = grey, label = &amp;#39;&amp;#39;]node [fillcolor = red, label = &amp;#39;四川大学&amp;#39;]anode [fillcolor = green, label = &amp;#39;文新&amp;#39;]bnode [fillcolor = green, label = &amp;#39;建环&amp;#39;]cnode [fillcolor = green, label = &amp;#39;公管&amp;#39;]dnode [fillcolor = orange, label = &amp;#39;信息资源管理&amp;#39;]enode [fillcolor = orange, label = &amp;#39;哲学&amp;#39;]fnode [fillcolor = orange, label = &amp;#39;土地资源管理&amp;#39;]gnode [fillcolor = orange, label = &amp;#39;建筑系&amp;#39;]hnode [fillcolor = orange, label = &amp;#39;土木工程&amp;#39;]inode [fillcolor = orange, label = &amp;#39;工程科学与力学&amp;#39;]jnode [fillcolor = orange, label = &amp;#39;中国语言文学类&amp;#39;]knode [fillcolor = orange, label = &amp;#39;广告学&amp;#39;]lnode [fillcolor = orange, label = &amp;#39;新闻学&amp;#39;]medge [color = grey]a -&amp;gt; {b c d}b -&amp;gt; {e f g}c -&amp;gt; {h i j}d -&amp;gt; {k l m}}&amp;quot;){&#34;</description>
+    </item>
     
     <item>
       <title>ggplot</title>
