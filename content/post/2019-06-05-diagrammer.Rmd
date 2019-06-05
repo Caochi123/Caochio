@@ -1,0 +1,63 @@
+---
+title: "DiagrammeR"
+author: "Caochi"
+date: '2019-06-05'
+slug: diagrammer
+tags: []
+categories: []
+---
+练习1
+
+```{r}
+library(DiagrammeR)
+grViz("digraph fig{
+scu[label='四川大学', shape=egg]
+A [label='公管', color=red, shape=egg]
+B [label='文新', color=blue, shape=egg]
+C [label='建环', color=green, shape=egg]
+D [label='数院', color=yellow, shape=egg]
+scu -> {A,B,C,D}
+}")
+```
+
+练习2
+
+```{r}
+grViz("
+digraph dot {
+graph [layout = neato]
+node [shape = egg, style = filled, color = grey, label = '']
+node [fillcolor = red, label = '四川大学']
+a
+node [fillcolor = green, label = '文新']
+b
+node [fillcolor = green, label = '建环']
+c
+node [fillcolor = green, label = '公管']
+d
+node [fillcolor = orange, label = '信息资源管理']
+e
+node [fillcolor = orange, label = '哲学']
+f
+node [fillcolor = orange, label = '土地资源管理']
+g
+node [fillcolor = orange, label = '建筑系']
+h
+node [fillcolor = orange, label = '土木工程']
+i
+node [fillcolor = orange, label = '工程科学与力学']
+j
+node [fillcolor = orange, label = '中国语言文学类']
+k
+node [fillcolor = orange, label = '广告学']
+l
+node [fillcolor = orange, label = '新闻学']
+m
+edge [color = grey]
+a -> {b c d}
+b -> {e f g}
+c -> {h i j}
+d -> {k l m}
+}")
+```
+
