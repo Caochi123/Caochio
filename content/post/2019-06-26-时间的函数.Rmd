@@ -1,0 +1,20 @@
+---
+title: 时间的函数
+author: Caochi
+date: '2019-06-26'
+slug: 时间的函数
+categories: []
+tags: []
+---
+```{r}
+today <- Sys.Date()
+gtd <- as.Date("2019-06-08")
+```
+
+距离刘也R1SE成团出道已有
+
+```{r}
+today - gtd
+```
+
+“你坚信的，终将成为你想成为的。”

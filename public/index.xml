@@ -6,10 +6,20 @@
     <description>Recent content on Caochi Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>时间的函数</title>
+      <link>/2019/06/26/%E6%97%B6%E9%97%B4%E7%9A%84%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/26/%E6%97%B6%E9%97%B4%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
+      <description>today &amp;lt;- Sys.Date()gtd &amp;lt;- as.Date(&amp;quot;2019-06-08&amp;quot;)距离刘也R1SE成团出道已有
+today - gtd## Time difference of 18 days“你坚信的，终将成为你想成为的。”</description>
+    </item>
     
     <item>
       <title>DiagrammeR</title>
@@ -112,6 +122,17 @@ library(xml2)library(rvest)url&amp;lt;-&amp;#39;http://www.gov.cn/zhuanti/2018
       
       <guid>/about/</guid>
       <description>曹驰，女，1999年7月25日。籍贯山东省菏泽市巨野县，就读于四川大学公共管理学院信息资源管理专业。</description>
+    </item>
+    
+    <item>
+      <title>Caochi Blog</title>
+      <link>/2015/07/23/caochi-blog/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/caochi-blog/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>
